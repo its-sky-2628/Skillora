@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 
 from resume_parser import parse_resume
 from skill_analyzer import analyze_skill_gaps, get_available_roles, load_taxonomy
@@ -130,6 +130,35 @@ async def analyze_resume(
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
+
+
+
+# ── Serve the built React frontend ──────────────────────────────────────────
+FRONTEND_DIST = Path(__file__).resolve().parent.parent / "frontend" / "dist"
+
+
+@app.get("/{full_path:path}", include_in_schema=False)
+async def serve_frontend(full_path: str):
+    if full_path == "api" or full_path.startswith("api/"):
+        raise HTTPException(status_code=404, detail="Not found")
+
+    dist_root = FRONTEND_DIST.resolve()
+    requested_file = (dist_root / full_path).resolve()
+
+    if requested_file != dist_root and dist_root not in requested_file.parents:
+        raise HTTPException(status_code=404, detail="Not found")
+
+    if requested_file.is_file():
+        return FileResponse(requested_file)
+
+    index_file = dist_root / "index.html"
+    if index_file.is_file():
+        return FileResponse(index_file)
+
+    raise HTTPException(
+        status_code=404,
+        detail="Frontend build not found. Build the frontend first."
+    )
 
 
 # ── Run ─────────────────────────────────────────────────────────────────────
