@@ -1,0 +1,863 @@
+{
+  "roles": {
+    "data_analyst": {
+      "title": "Data Analyst",
+      "description": "Analyze data to extract actionable business insights using statistical methods and visualization tools.",
+      "icon": "📊",
+      "skills": {
+        "critical": [
+          {
+            "name": "SQL",
+            "aliases": ["structured query language", "mysql", "postgresql", "sqlite", "sql server", "oracle sql", "nosql", "database querying", "sql queries"],
+            "category": "Technical",
+            "description": "Write complex queries to extract, manipulate, and analyze data from relational databases.",
+            "resources": [
+              {"type": "youtube", "title": "SQL Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY", "duration": "4h 20m"},
+              {"type": "course", "title": "SQL for Data Science - Coursera (UC Davis)", "url": "https://www.coursera.org/learn/sql-for-data-science", "duration": "4 weeks"},
+              {"type": "practice", "title": "LeetCode SQL Problems", "url": "https://leetcode.com/problemset/database/", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "Python",
+            "aliases": ["python3", "python programming", "py", "python scripting", "cpython"],
+            "category": "Technical",
+            "description": "Core programming language for data manipulation, analysis, and automation.",
+            "resources": [
+              {"type": "youtube", "title": "Python for Data Analysis - freeCodeCamp", "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8", "duration": "5h 30m"},
+              {"type": "course", "title": "Python for Everybody - Coursera", "url": "https://www.coursera.org/specializations/python", "duration": "8 months"},
+              {"type": "github", "title": "Python Data Science Handbook", "url": "https://github.com/jakevdp/PythonDataScienceHandbook", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Statistics",
+            "aliases": ["statistical analysis", "descriptive statistics", "inferential statistics", "hypothesis testing", "regression analysis", "statistical modeling", "biostatistics", "probability", "probability theory"],
+            "category": "Analytical",
+            "description": "Apply statistical methods to interpret data distributions, test hypotheses, and build models.",
+            "resources": [
+              {"type": "youtube", "title": "Statistics Fundamentals - StatQuest", "url": "https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9", "duration": "12h"},
+              {"type": "course", "title": "Statistics with Python - Coursera (UMich)", "url": "https://www.coursera.org/specializations/statistics-with-python", "duration": "3 months"},
+              {"type": "docs", "title": "Khan Academy - Statistics & Probability", "url": "https://www.khanacademy.org/math/statistics-probability", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Excel",
+            "aliases": ["microsoft excel", "ms excel", "spreadsheet", "google sheets", "pivot tables", "vlookup", "xlookup", "excel formulas", "advanced excel"],
+            "category": "Technical",
+            "description": "Advanced spreadsheet skills including pivot tables, formulas, macros, and data modeling.",
+            "resources": [
+              {"type": "youtube", "title": "Excel Full Course - Simplilearn", "url": "https://www.youtube.com/watch?v=27dxBp0EgCc", "duration": "8h"},
+              {"type": "course", "title": "Excel Skills for Business - Coursera (Macquarie)", "url": "https://www.coursera.org/specializations/excel", "duration": "6 months"},
+              {"type": "docs", "title": "Microsoft Excel Documentation", "url": "https://support.microsoft.com/en-us/excel", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Data Visualization",
+            "aliases": ["tableau", "power bi", "matplotlib", "seaborn", "plotly", "data viz", "dashboarding", "d3.js", "looker", "charts", "grafana"],
+            "category": "Technical",
+            "description": "Create compelling visual representations of data using modern BI and charting tools.",
+            "resources": [
+              {"type": "youtube", "title": "Tableau Full Course - edureka!", "url": "https://www.youtube.com/watch?v=aHaOIvR00So", "duration": "4h"},
+              {"type": "course", "title": "Data Visualization with Python - Coursera (IBM)", "url": "https://www.coursera.org/learn/python-for-data-visualization", "duration": "5 weeks"},
+              {"type": "github", "title": "Awesome Data Visualization", "url": "https://github.com/fasouto/awesome-dataviz", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "important": [
+          {
+            "name": "Pandas",
+            "aliases": ["pandas library", "dataframes", "data wrangling", "data manipulation", "pandas python"],
+            "category": "Technical",
+            "description": "Python library for data manipulation and analysis using DataFrames.",
+            "resources": [
+              {"type": "youtube", "title": "Pandas Complete Tutorial - Keith Galli", "url": "https://www.youtube.com/watch?v=vmEHCJofslg", "duration": "1h"},
+              {"type": "docs", "title": "Pandas Official Documentation", "url": "https://pandas.pydata.org/docs/getting_started/index.html", "duration": "Self-paced"},
+              {"type": "practice", "title": "Kaggle - Pandas Course", "url": "https://www.kaggle.com/learn/pandas", "duration": "4h"}
+            ]
+          },
+          {
+            "name": "NumPy",
+            "aliases": ["numpy library", "numerical computing", "numpy arrays", "ndarray"],
+            "category": "Technical",
+            "description": "Fundamental package for scientific computing and numerical operations in Python.",
+            "resources": [
+              {"type": "youtube", "title": "NumPy Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI", "duration": "1h"},
+              {"type": "docs", "title": "NumPy Official Tutorial", "url": "https://numpy.org/doc/stable/user/absolute_beginners.html", "duration": "Self-paced"},
+              {"type": "practice", "title": "100 NumPy Exercises", "url": "https://github.com/rougier/numpy-100", "duration": "5h"}
+            ]
+          },
+          {
+            "name": "Data Cleaning",
+            "aliases": ["data preprocessing", "data wrangling", "etl", "data quality", "data preparation", "data munging", "missing values", "outlier detection"],
+            "category": "Analytical",
+            "description": "Techniques to handle missing data, outliers, duplicates, and inconsistent formats.",
+            "resources": [
+              {"type": "youtube", "title": "Data Cleaning with Python - Alex The Analyst", "url": "https://www.youtube.com/watch?v=bDhvCp3_lYw", "duration": "30m"},
+              {"type": "course", "title": "Data Cleaning - Kaggle", "url": "https://www.kaggle.com/learn/data-cleaning", "duration": "4h"},
+              {"type": "github", "title": "Data Cleaning Guide", "url": "https://github.com/PacktPublishing/Python-Data-Cleaning-Cookbook", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Business Acumen",
+            "aliases": ["business intelligence", "business analytics", "domain knowledge", "kpi", "key performance indicators", "business metrics", "stakeholder management"],
+            "category": "Soft",
+            "description": "Understanding business context to translate data insights into strategic recommendations.",
+            "resources": [
+              {"type": "course", "title": "Business Analytics - Coursera (Wharton)", "url": "https://www.coursera.org/specializations/business-analytics", "duration": "4 months"},
+              {"type": "youtube", "title": "Business Analytics Full Course - Simplilearn", "url": "https://www.youtube.com/watch?v=kGnFHzav1EI", "duration": "6h"},
+              {"type": "docs", "title": "Harvard Business Review - Analytics", "url": "https://hbr.org/topic/analytics-and-data-science", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "Communication",
+            "aliases": ["presentation skills", "data storytelling", "report writing", "stakeholder communication", "technical writing"],
+            "category": "Soft",
+            "description": "Ability to communicate data findings clearly to both technical and non-technical audiences.",
+            "resources": [
+              {"type": "course", "title": "Storytelling with Data - Coursera", "url": "https://www.coursera.org/learn/analytics-storytelling", "duration": "4 weeks"},
+              {"type": "youtube", "title": "Data Storytelling - Cole Nussbaumer", "url": "https://www.youtube.com/watch?v=8EMW7io4rSI", "duration": "1h"},
+              {"type": "docs", "title": "Storytelling with Data (Book)", "url": "https://www.storytellingwithdata.com/", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "nice_to_have": [
+          {
+            "name": "R Programming",
+            "aliases": ["r language", "rstudio", "r statistical computing", "tidyverse", "ggplot2", "dplyr"],
+            "category": "Technical",
+            "description": "Statistical programming language popular in academia and research-heavy analysis roles.",
+            "resources": [
+              {"type": "youtube", "title": "R Programming Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=_V8eKsto3Ug", "duration": "5h"},
+              {"type": "course", "title": "R Programming - Coursera (Johns Hopkins)", "url": "https://www.coursera.org/learn/r-programming", "duration": "4 weeks"},
+              {"type": "docs", "title": "R for Data Science (Book)", "url": "https://r4ds.had.co.nz/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Machine Learning Basics",
+            "aliases": ["ml basics", "predictive modeling", "classification", "clustering", "decision trees", "random forest"],
+            "category": "Technical",
+            "description": "Foundational ML concepts to build simple predictive models and understand algorithmic outputs.",
+            "resources": [
+              {"type": "youtube", "title": "Machine Learning Course - Andrew Ng (Stanford)", "url": "https://www.youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN", "duration": "20h"},
+              {"type": "course", "title": "ML Crash Course - Google", "url": "https://developers.google.com/machine-learning/crash-course", "duration": "15h"},
+              {"type": "practice", "title": "Kaggle Learn - Intro to ML", "url": "https://www.kaggle.com/learn/intro-to-machine-learning", "duration": "3h"}
+            ]
+          },
+          {
+            "name": "Cloud Platforms",
+            "aliases": ["aws", "gcp", "google cloud", "azure", "cloud computing", "bigquery", "redshift", "snowflake", "databricks"],
+            "category": "Technical",
+            "description": "Understanding of cloud data platforms for scalable data processing and storage.",
+            "resources": [
+              {"type": "youtube", "title": "AWS for Data Analytics - Be A Better Dev", "url": "https://www.youtube.com/watch?v=KLAzMBaZTO4", "duration": "2h"},
+              {"type": "course", "title": "Google Cloud Big Data & ML - Coursera", "url": "https://www.coursera.org/specializations/gcp-data-machine-learning", "duration": "5 months"},
+              {"type": "docs", "title": "AWS Analytics Documentation", "url": "https://aws.amazon.com/analytics/", "duration": "Self-paced"}
+            ]
+          }
+        ]
+      }
+    },
+    "ml_engineer": {
+      "title": "Machine Learning Engineer",
+      "description": "Design, build, and deploy machine learning models and pipelines for production systems.",
+      "icon": "🤖",
+      "skills": {
+        "critical": [
+          {
+            "name": "Python",
+            "aliases": ["python3", "python programming", "py", "python scripting"],
+            "category": "Technical",
+            "description": "Primary language for ML development, data processing, and model training.",
+            "resources": [
+              {"type": "youtube", "title": "Python for ML - Sentdex", "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v", "duration": "10h"},
+              {"type": "course", "title": "Python 3 Programming - Coursera (UMich)", "url": "https://www.coursera.org/specializations/python-3-programming", "duration": "5 months"},
+              {"type": "github", "title": "Python ML Projects", "url": "https://github.com/trekhleb/homemade-machine-learning", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Machine Learning",
+            "aliases": ["ml", "supervised learning", "unsupervised learning", "model training", "feature engineering", "hyperparameter tuning", "cross-validation", "gradient descent"],
+            "category": "Technical",
+            "description": "Core ML algorithms, model selection, training techniques, and evaluation metrics.",
+            "resources": [
+              {"type": "youtube", "title": "Machine Learning Specialization - Andrew Ng", "url": "https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI", "duration": "30h"},
+              {"type": "course", "title": "ML Specialization - Coursera (Stanford/DeepLearning.AI)", "url": "https://www.coursera.org/specializations/machine-learning-introduction", "duration": "3 months"},
+              {"type": "github", "title": "ML From Scratch", "url": "https://github.com/eriklindernoren/ML-From-Scratch", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Deep Learning",
+            "aliases": ["neural networks", "cnn", "rnn", "lstm", "transformer", "attention mechanism", "backpropagation", "convolutional neural network", "recurrent neural network", "generative ai", "gans"],
+            "category": "Technical",
+            "description": "Neural network architectures for complex pattern recognition and generation tasks.",
+            "resources": [
+              {"type": "youtube", "title": "Deep Learning Specialization - Andrew Ng", "url": "https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0", "duration": "40h"},
+              {"type": "course", "title": "Deep Learning Specialization - Coursera", "url": "https://www.coursera.org/specializations/deep-learning", "duration": "5 months"},
+              {"type": "github", "title": "Dive into Deep Learning", "url": "https://github.com/d2l-ai/d2l-en", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "TensorFlow",
+            "aliases": ["tensorflow2", "tf", "keras", "tf.keras", "tensorflow lite", "tflite"],
+            "category": "Technical",
+            "description": "Google's ML framework for building and deploying neural network models.",
+            "resources": [
+              {"type": "youtube", "title": "TensorFlow 2.0 Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=tPYj3fFJGjk", "duration": "7h"},
+              {"type": "course", "title": "TensorFlow Developer Certificate - Coursera", "url": "https://www.coursera.org/professional-certificates/tensorflow-in-practice", "duration": "4 months"},
+              {"type": "docs", "title": "TensorFlow Official Tutorials", "url": "https://www.tensorflow.org/tutorials", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "PyTorch",
+            "aliases": ["pytorch framework", "torch", "torchvision", "pytorch lightning"],
+            "category": "Technical",
+            "description": "Meta's dynamic ML framework favored for research and production deployment.",
+            "resources": [
+              {"type": "youtube", "title": "PyTorch Full Course - Patrick Loeber", "url": "https://www.youtube.com/watch?v=c36lUUr864M", "duration": "5h"},
+              {"type": "course", "title": "Learn PyTorch for Deep Learning - ZTM", "url": "https://www.learnpytorch.io/", "duration": "25h"},
+              {"type": "docs", "title": "PyTorch Official Tutorials", "url": "https://pytorch.org/tutorials/", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "important": [
+          {
+            "name": "Scikit-learn",
+            "aliases": ["sklearn", "scikit learn", "sk-learn"],
+            "category": "Technical",
+            "description": "Essential ML library for classical algorithms, preprocessing, and model evaluation.",
+            "resources": [
+              {"type": "youtube", "title": "Scikit-learn Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=pqNCD_5r0IU", "duration": "3h"},
+              {"type": "docs", "title": "Scikit-learn User Guide", "url": "https://scikit-learn.org/stable/user_guide.html", "duration": "Self-paced"},
+              {"type": "practice", "title": "Kaggle ML Competitions", "url": "https://www.kaggle.com/competitions", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "MLOps",
+            "aliases": ["ml operations", "model deployment", "ml pipeline", "mlflow", "kubeflow", "model serving", "model monitoring", "experiment tracking", "feature store"],
+            "category": "Technical",
+            "description": "End-to-end ML lifecycle management from training to deployment and monitoring.",
+            "resources": [
+              {"type": "youtube", "title": "MLOps Full Course - DataTalks.Club", "url": "https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK", "duration": "15h"},
+              {"type": "course", "title": "MLOps Specialization - Coursera (DeepLearning.AI)", "url": "https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops", "duration": "4 months"},
+              {"type": "github", "title": "Awesome MLOps", "url": "https://github.com/visenger/awesome-mlops", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Mathematics",
+            "aliases": ["linear algebra", "calculus", "optimization", "matrix operations", "eigenvalues", "gradient", "multivariable calculus", "mathematical foundations"],
+            "category": "Analytical",
+            "description": "Mathematical foundations including linear algebra, calculus, and optimization theory.",
+            "resources": [
+              {"type": "youtube", "title": "Mathematics for ML - Imperial College London", "url": "https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPRSJVnr3GVSk7", "duration": "20h"},
+              {"type": "course", "title": "Mathematics for ML - Coursera (Imperial)", "url": "https://www.coursera.org/specializations/mathematics-machine-learning", "duration": "4 months"},
+              {"type": "docs", "title": "3Blue1Brown - Linear Algebra", "url": "https://www.3blue1brown.com/topics/linear-algebra", "duration": "4h"}
+            ]
+          },
+          {
+            "name": "NLP",
+            "aliases": ["natural language processing", "text mining", "sentiment analysis", "text classification", "word embeddings", "bert", "gpt", "transformers", "hugging face", "spacy", "nltk", "llm", "large language models"],
+            "category": "Technical",
+            "description": "Processing and understanding human language data using ML techniques.",
+            "resources": [
+              {"type": "youtube", "title": "NLP Course - Hugging Face", "url": "https://www.youtube.com/playlist?list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o", "duration": "10h"},
+              {"type": "course", "title": "NLP Specialization - Coursera (DeepLearning.AI)", "url": "https://www.coursera.org/specializations/natural-language-processing", "duration": "4 months"},
+              {"type": "docs", "title": "Hugging Face NLP Course", "url": "https://huggingface.co/learn/nlp-course", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Docker",
+            "aliases": ["containerization", "docker compose", "dockerfile", "container", "docker containers"],
+            "category": "Technical",
+            "description": "Containerize ML models and pipelines for reproducible environments and deployment.",
+            "resources": [
+              {"type": "youtube", "title": "Docker Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=3c-iBn73dDE", "duration": "3h"},
+              {"type": "course", "title": "Docker for Beginners - KodeKloud", "url": "https://kodekloud.com/courses/docker-for-the-absolute-beginner/", "duration": "4h"},
+              {"type": "docs", "title": "Docker Official Documentation", "url": "https://docs.docker.com/get-started/", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "nice_to_have": [
+          {
+            "name": "Computer Vision",
+            "aliases": ["cv", "image recognition", "object detection", "image segmentation", "opencv", "yolo"],
+            "category": "Technical",
+            "description": "Visual data understanding through image classification, detection, and segmentation.",
+            "resources": [
+              {"type": "youtube", "title": "Computer Vision Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=01sAkU_NvOY", "duration": "6h"},
+              {"type": "course", "title": "CS231n - Stanford (YouTube)", "url": "https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv", "duration": "20h"},
+              {"type": "docs", "title": "OpenCV Documentation", "url": "https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Cloud ML Services",
+            "aliases": ["aws sagemaker", "google vertex ai", "azure ml", "cloud ml", "google ai platform"],
+            "category": "Technical",
+            "description": "Managed cloud services for scalable model training and deployment.",
+            "resources": [
+              {"type": "youtube", "title": "AWS SageMaker Tutorial - AWS", "url": "https://www.youtube.com/watch?v=lQmcXAN_GJ0", "duration": "2h"},
+              {"type": "course", "title": "ML on Google Cloud - Coursera", "url": "https://www.coursera.org/specializations/machine-learning-tensorflow-gcp", "duration": "5 months"},
+              {"type": "docs", "title": "Vertex AI Documentation", "url": "https://cloud.google.com/vertex-ai/docs", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Git",
+            "aliases": ["version control", "github", "gitlab", "bitbucket", "git workflow", "source control"],
+            "category": "Technical",
+            "description": "Version control for collaborative ML development and experiment tracking.",
+            "resources": [
+              {"type": "youtube", "title": "Git & GitHub Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=RGOj5yH7evk", "duration": "1h"},
+              {"type": "docs", "title": "Git Official Documentation", "url": "https://git-scm.com/doc", "duration": "Self-paced"},
+              {"type": "practice", "title": "Learn Git Branching", "url": "https://learngitbranching.js.org/", "duration": "2h"}
+            ]
+          }
+        ]
+      }
+    },
+    "software_developer": {
+      "title": "Software Developer",
+      "description": "Design, develop, and maintain scalable software applications using modern engineering practices.",
+      "icon": "💻",
+      "skills": {
+        "critical": [
+          {
+            "name": "Data Structures & Algorithms",
+            "aliases": ["dsa", "algorithms", "data structures", "arrays", "linked lists", "trees", "graphs", "sorting", "searching", "dynamic programming", "leetcode", "competitive programming", "problem solving"],
+            "category": "Technical",
+            "description": "Core CS fundamentals essential for writing efficient code and acing technical interviews.",
+            "resources": [
+              {"type": "youtube", "title": "DSA Full Course - Abdul Bari", "url": "https://www.youtube.com/playlist?list=PLAXnLdrLnQpRcveZTtD644gM9uzYqJCwr", "duration": "40h"},
+              {"type": "course", "title": "Algorithms Specialization - Coursera (Stanford)", "url": "https://www.coursera.org/specializations/algorithms", "duration": "4 months"},
+              {"type": "practice", "title": "NeetCode - Blind 75", "url": "https://neetcode.io/practice", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "System Design",
+            "aliases": ["software architecture", "distributed systems", "scalability", "microservices", "design patterns", "high level design", "low level design", "hld", "lld"],
+            "category": "Technical",
+            "description": "Architect scalable, fault-tolerant systems for real-world production environments.",
+            "resources": [
+              {"type": "youtube", "title": "System Design Full Course - Gaurav Sen", "url": "https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX", "duration": "15h"},
+              {"type": "github", "title": "System Design Primer", "url": "https://github.com/donnemartin/system-design-primer", "duration": "Self-paced"},
+              {"type": "docs", "title": "Designing Data-Intensive Applications (Book)", "url": "https://dataintensive.net/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Git",
+            "aliases": ["version control", "github", "gitlab", "bitbucket", "git workflow", "source control", "git branching"],
+            "category": "Technical",
+            "description": "Version control mastery for collaborative development and code management.",
+            "resources": [
+              {"type": "youtube", "title": "Git & GitHub Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=RGOj5yH7evk", "duration": "1h"},
+              {"type": "docs", "title": "Pro Git Book", "url": "https://git-scm.com/book/en/v2", "duration": "Self-paced"},
+              {"type": "practice", "title": "Learn Git Branching", "url": "https://learngitbranching.js.org/", "duration": "2h"}
+            ]
+          },
+          {
+            "name": "Object-Oriented Programming",
+            "aliases": ["oop", "oops", "classes", "inheritance", "polymorphism", "encapsulation", "abstraction", "solid principles"],
+            "category": "Technical",
+            "description": "OOP paradigms and SOLID principles for writing maintainable, extensible code.",
+            "resources": [
+              {"type": "youtube", "title": "OOP Concepts - Programming with Mosh", "url": "https://www.youtube.com/watch?v=pTB0EiLXUC8", "duration": "1h"},
+              {"type": "course", "title": "Object-Oriented Design - Coursera (University of Alberta)", "url": "https://www.coursera.org/learn/object-oriented-design", "duration": "4 weeks"},
+              {"type": "docs", "title": "Refactoring Guru - Design Patterns", "url": "https://refactoring.guru/design-patterns", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "REST APIs",
+            "aliases": ["api development", "restful apis", "api design", "http methods", "crud", "graphql", "grpc", "web services", "postman", "swagger"],
+            "category": "Technical",
+            "description": "Design and consume RESTful APIs for backend services and integrations.",
+            "resources": [
+              {"type": "youtube", "title": "REST API Design Best Practices", "url": "https://www.youtube.com/watch?v=DcLnBfO3kmw", "duration": "1h"},
+              {"type": "docs", "title": "RESTful API Design Guide", "url": "https://restfulapi.net/", "duration": "Self-paced"},
+              {"type": "practice", "title": "Postman Learning Center", "url": "https://learning.postman.com/", "duration": "5h"}
+            ]
+          }
+        ],
+        "important": [
+          {
+            "name": "Databases",
+            "aliases": ["sql", "mysql", "postgresql", "mongodb", "redis", "database design", "orm", "nosql", "sqlite", "database management"],
+            "category": "Technical",
+            "description": "Relational and NoSQL database design, querying, and optimization.",
+            "resources": [
+              {"type": "youtube", "title": "Database Design Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=ztHopE5Wnpc", "duration": "8h"},
+              {"type": "course", "title": "Databases for Developers - Oracle", "url": "https://devgym.oracle.com/", "duration": "Self-paced"},
+              {"type": "docs", "title": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Testing",
+            "aliases": ["unit testing", "integration testing", "test driven development", "tdd", "jest", "pytest", "mocha", "selenium", "qa", "quality assurance"],
+            "category": "Technical",
+            "description": "Write and maintain automated tests to ensure code quality and prevent regressions.",
+            "resources": [
+              {"type": "youtube", "title": "Testing JavaScript - Kent C. Dodds", "url": "https://www.youtube.com/watch?v=r9HdJ8P6GQI", "duration": "2h"},
+              {"type": "docs", "title": "Testing Library Documentation", "url": "https://testing-library.com/docs/", "duration": "Self-paced"},
+              {"type": "practice", "title": "Exercism - TDD Practice", "url": "https://exercism.org/", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "Docker",
+            "aliases": ["containerization", "docker compose", "dockerfile", "containers"],
+            "category": "Technical",
+            "description": "Containerize applications for consistent deployment across environments.",
+            "resources": [
+              {"type": "youtube", "title": "Docker Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=3c-iBn73dDE", "duration": "3h"},
+              {"type": "course", "title": "Docker Mastery - Udemy (Bret Fisher)", "url": "https://www.udemy.com/course/docker-mastery/", "duration": "20h"},
+              {"type": "docs", "title": "Docker Official Docs", "url": "https://docs.docker.com/get-started/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "CI/CD",
+            "aliases": ["continuous integration", "continuous deployment", "github actions", "jenkins", "devops pipeline", "automated deployment"],
+            "category": "Technical",
+            "description": "Automate build, test, and deployment workflows for faster software delivery.",
+            "resources": [
+              {"type": "youtube", "title": "GitHub Actions Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=R8_veQiYBjI", "duration": "2h"},
+              {"type": "docs", "title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "duration": "Self-paced"},
+              {"type": "practice", "title": "CI/CD Pipeline Tutorial", "url": "https://www.atlassian.com/continuous-delivery/tutorials", "duration": "4h"}
+            ]
+          },
+          {
+            "name": "Agile Methodologies",
+            "aliases": ["scrum", "kanban", "agile development", "sprint", "jira", "project management", "stand-up"],
+            "category": "Soft",
+            "description": "Agile frameworks for iterative development and team collaboration.",
+            "resources": [
+              {"type": "course", "title": "Agile with Atlassian Jira - Coursera", "url": "https://www.coursera.org/learn/agile-atlassian-jira", "duration": "4 weeks"},
+              {"type": "youtube", "title": "Agile Methodology Explained", "url": "https://www.youtube.com/watch?v=Z9QbYZh1YXY", "duration": "30m"},
+              {"type": "docs", "title": "Agile Manifesto", "url": "https://agilemanifesto.org/", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "nice_to_have": [
+          {
+            "name": "Cloud Computing",
+            "aliases": ["aws", "gcp", "azure", "cloud services", "serverless", "lambda", "ec2", "s3"],
+            "category": "Technical",
+            "description": "Deploy and manage applications on cloud infrastructure platforms.",
+            "resources": [
+              {"type": "youtube", "title": "AWS Cloud Practitioner - freeCodeCamp", "url": "https://www.youtube.com/watch?v=SOTamWNgDKc", "duration": "14h"},
+              {"type": "course", "title": "Cloud Computing Specialization - Coursera (Illinois)", "url": "https://www.coursera.org/specializations/cloud-computing", "duration": "6 months"},
+              {"type": "docs", "title": "AWS Well-Architected Framework", "url": "https://aws.amazon.com/architecture/well-architected/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Security",
+            "aliases": ["cybersecurity", "application security", "owasp", "authentication", "authorization", "encryption", "jwt", "oauth"],
+            "category": "Technical",
+            "description": "Secure coding practices and application security fundamentals.",
+            "resources": [
+              {"type": "youtube", "title": "Web Security - Computerphile", "url": "https://www.youtube.com/playlist?list=PLzH6n4zXuckquVnQ0KlMDxyT5YE-sA8Ps", "duration": "5h"},
+              {"type": "docs", "title": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/", "duration": "Self-paced"},
+              {"type": "practice", "title": "HackTheBox", "url": "https://www.hackthebox.com/", "duration": "Ongoing"}
+            ]
+          }
+        ]
+      }
+    },
+    "frontend_developer": {
+      "title": "Frontend Developer",
+      "description": "Build responsive, performant, and accessible user interfaces for web applications.",
+      "icon": "🎨",
+      "skills": {
+        "critical": [
+          {
+            "name": "HTML",
+            "aliases": ["html5", "hypertext markup language", "semantic html", "web markup", "html elements"],
+            "category": "Technical",
+            "description": "Semantic markup for structuring accessible, SEO-friendly web content.",
+            "resources": [
+              {"type": "youtube", "title": "HTML Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=kUMe1FH4CHE", "duration": "2h"},
+              {"type": "docs", "title": "MDN Web Docs - HTML", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML", "duration": "Self-paced"},
+              {"type": "practice", "title": "freeCodeCamp - Responsive Web Design", "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/", "duration": "5h"}
+            ]
+          },
+          {
+            "name": "CSS",
+            "aliases": ["css3", "cascading style sheets", "flexbox", "css grid", "responsive design", "media queries", "animations", "sass", "scss", "tailwindcss", "tailwind", "bootstrap"],
+            "category": "Technical",
+            "description": "Modern styling with Flexbox, Grid, animations, and responsive design patterns.",
+            "resources": [
+              {"type": "youtube", "title": "CSS Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=1Rs2ND1ryYc", "duration": "11h"},
+              {"type": "docs", "title": "CSS Tricks - A Complete Guide to Flexbox", "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/", "duration": "Self-paced"},
+              {"type": "practice", "title": "CSS Battle", "url": "https://cssbattle.dev/", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "JavaScript",
+            "aliases": ["js", "es6", "ecmascript", "vanilla javascript", "javascript programming", "dom manipulation", "async await", "promises"],
+            "category": "Technical",
+            "description": "Core JavaScript including ES6+, async patterns, DOM manipulation, and event handling.",
+            "resources": [
+              {"type": "youtube", "title": "JavaScript Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg", "duration": "3h 26m"},
+              {"type": "docs", "title": "JavaScript.info - Modern JavaScript Tutorial", "url": "https://javascript.info/", "duration": "Self-paced"},
+              {"type": "practice", "title": "JavaScript30 - Wes Bos", "url": "https://javascript30.com/", "duration": "30 days"}
+            ]
+          },
+          {
+            "name": "React",
+            "aliases": ["reactjs", "react.js", "react hooks", "react components", "jsx", "react router", "redux", "zustand", "context api", "next.js", "nextjs"],
+            "category": "Technical",
+            "description": "Component-based UI library for building interactive, state-driven web applications.",
+            "resources": [
+              {"type": "youtube", "title": "React Full Course - Codevolution", "url": "https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3", "duration": "10h"},
+              {"type": "docs", "title": "React Official Docs", "url": "https://react.dev/learn", "duration": "Self-paced"},
+              {"type": "course", "title": "Full Stack Open - University of Helsinki", "url": "https://fullstackopen.com/en/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "TypeScript",
+            "aliases": ["ts", "typescript programming", "typed javascript", "type safety"],
+            "category": "Technical",
+            "description": "Typed JavaScript superset for building more maintainable large-scale applications.",
+            "resources": [
+              {"type": "youtube", "title": "TypeScript Full Course - Net Ninja", "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI", "duration": "5h"},
+              {"type": "docs", "title": "TypeScript Official Handbook", "url": "https://www.typescriptlang.org/docs/handbook/intro.html", "duration": "Self-paced"},
+              {"type": "practice", "title": "Type Challenges", "url": "https://github.com/type-challenges/type-challenges", "duration": "Ongoing"}
+            ]
+          }
+        ],
+        "important": [
+          {
+            "name": "Responsive Design",
+            "aliases": ["mobile first", "media queries", "fluid layouts", "adaptive design", "viewport", "progressive enhancement"],
+            "category": "Technical",
+            "description": "Build layouts that adapt seamlessly across all device sizes and orientations.",
+            "resources": [
+              {"type": "youtube", "title": "Responsive Web Design - Kevin Powell", "url": "https://www.youtube.com/watch?v=srvUrASNj0s", "duration": "3h"},
+              {"type": "docs", "title": "MDN - Responsive Design", "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design", "duration": "Self-paced"},
+              {"type": "practice", "title": "Responsive Design Checker", "url": "https://responsivedesignchecker.com/", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "Git",
+            "aliases": ["version control", "github", "gitlab"],
+            "category": "Technical",
+            "description": "Version control for collaborative frontend development.",
+            "resources": [
+              {"type": "youtube", "title": "Git & GitHub - freeCodeCamp", "url": "https://www.youtube.com/watch?v=RGOj5yH7evk", "duration": "1h"},
+              {"type": "docs", "title": "Pro Git Book", "url": "https://git-scm.com/book/en/v2", "duration": "Self-paced"},
+              {"type": "practice", "title": "Learn Git Branching", "url": "https://learngitbranching.js.org/", "duration": "2h"}
+            ]
+          },
+          {
+            "name": "Web Performance",
+            "aliases": ["page speed", "lighthouse", "core web vitals", "lazy loading", "code splitting", "bundle optimization", "caching"],
+            "category": "Technical",
+            "description": "Optimize load times, rendering performance, and Core Web Vitals scores.",
+            "resources": [
+              {"type": "youtube", "title": "Web Performance Fundamentals - Todd Gardner", "url": "https://www.youtube.com/watch?v=0fONene3OIA", "duration": "1h"},
+              {"type": "docs", "title": "web.dev - Performance", "url": "https://web.dev/performance/", "duration": "Self-paced"},
+              {"type": "practice", "title": "Google PageSpeed Insights", "url": "https://pagespeed.web.dev/", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "Accessibility",
+            "aliases": ["a11y", "wcag", "aria", "screen reader", "keyboard navigation", "web accessibility"],
+            "category": "Technical",
+            "description": "Build inclusive interfaces that work for users with disabilities.",
+            "resources": [
+              {"type": "course", "title": "Web Accessibility - Udacity (Google)", "url": "https://www.udacity.com/course/web-accessibility--ud891", "duration": "2 weeks"},
+              {"type": "docs", "title": "WCAG Guidelines", "url": "https://www.w3.org/WAI/standards-guidelines/wcag/", "duration": "Self-paced"},
+              {"type": "practice", "title": "a11y Project Checklist", "url": "https://www.a11yproject.com/checklist/", "duration": "Ongoing"}
+            ]
+          }
+        ],
+        "nice_to_have": [
+          {
+            "name": "Animation Libraries",
+            "aliases": ["framer motion", "gsap", "lottie", "three.js", "webgl", "css animations"],
+            "category": "Technical",
+            "description": "Advanced animation frameworks for creating engaging user experiences.",
+            "resources": [
+              {"type": "youtube", "title": "Framer Motion Tutorial - The Net Ninja", "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i", "duration": "3h"},
+              {"type": "docs", "title": "GSAP Documentation", "url": "https://greensock.com/docs/", "duration": "Self-paced"},
+              {"type": "docs", "title": "Framer Motion Docs", "url": "https://www.framer.com/motion/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Testing",
+            "aliases": ["jest", "react testing library", "cypress", "playwright", "e2e testing", "unit testing"],
+            "category": "Technical",
+            "description": "Frontend testing strategies including unit, integration, and end-to-end tests.",
+            "resources": [
+              {"type": "youtube", "title": "React Testing Library - Net Ninja", "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ", "duration": "3h"},
+              {"type": "docs", "title": "Testing Library Docs", "url": "https://testing-library.com/docs/", "duration": "Self-paced"},
+              {"type": "docs", "title": "Cypress Documentation", "url": "https://docs.cypress.io/", "duration": "Self-paced"}
+            ]
+          }
+        ]
+      }
+    },
+    "backend_developer": {
+      "title": "Backend Developer",
+      "description": "Build robust server-side applications, APIs, and data infrastructure.",
+      "icon": "⚙️",
+      "skills": {
+        "critical": [
+          {
+            "name": "Node.js",
+            "aliases": ["nodejs", "node", "express", "expressjs", "express.js", "nestjs", "nest.js", "fastify", "koa"],
+            "category": "Technical",
+            "description": "JavaScript runtime for building scalable server-side applications and APIs.",
+            "resources": [
+              {"type": "youtube", "title": "Node.js Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=Oe421EPjeBE", "duration": "8h"},
+              {"type": "course", "title": "Server-side Development with NodeJS - Coursera (HKUST)", "url": "https://www.coursera.org/learn/server-side-nodejs", "duration": "4 weeks"},
+              {"type": "docs", "title": "Node.js Official Documentation", "url": "https://nodejs.org/en/docs/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Databases",
+            "aliases": ["sql", "mysql", "postgresql", "mongodb", "redis", "database design", "orm", "nosql", "sqlite", "prisma", "sequelize", "mongoose"],
+            "category": "Technical",
+            "description": "Design, implement, and optimize both relational and NoSQL databases.",
+            "resources": [
+              {"type": "youtube", "title": "Database Engineering - Hussein Nasser", "url": "https://www.youtube.com/playlist?list=PLQnljOFTspQXjD0HOzN7P2tgzu7scWpl2", "duration": "20h"},
+              {"type": "course", "title": "Databases: Relational Databases - Stanford (edX)", "url": "https://www.edx.org/learn/relational-databases/stanford-university-databases-relational-databases-and-sql", "duration": "2 weeks"},
+              {"type": "docs", "title": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "REST APIs",
+            "aliases": ["api development", "restful apis", "api design", "graphql", "grpc", "web services"],
+            "category": "Technical",
+            "description": "Design and implement scalable, well-documented REST APIs.",
+            "resources": [
+              {"type": "youtube", "title": "REST API Design Best Practices", "url": "https://www.youtube.com/watch?v=DcLnBfO3kmw", "duration": "1h"},
+              {"type": "docs", "title": "REST API Tutorial", "url": "https://restfulapi.net/", "duration": "Self-paced"},
+              {"type": "practice", "title": "Postman Learning Center", "url": "https://learning.postman.com/", "duration": "5h"}
+            ]
+          },
+          {
+            "name": "Authentication & Authorization",
+            "aliases": ["auth", "jwt", "oauth", "oauth2", "session management", "passport.js", "bcrypt", "token-based auth", "rbac"],
+            "category": "Technical",
+            "description": "Implement secure user authentication and role-based access control.",
+            "resources": [
+              {"type": "youtube", "title": "JWT Authentication Tutorial - Web Dev Simplified", "url": "https://www.youtube.com/watch?v=mbsmsi7l3r4", "duration": "30m"},
+              {"type": "docs", "title": "Auth0 Documentation", "url": "https://auth0.com/docs", "duration": "Self-paced"},
+              {"type": "docs", "title": "OWASP Auth Cheatsheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Python",
+            "aliases": ["python3", "django", "flask", "fastapi", "python backend"],
+            "category": "Technical",
+            "description": "Python web frameworks for building APIs and backend services.",
+            "resources": [
+              {"type": "youtube", "title": "Django Full Course - Corey Schafer", "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p", "duration": "10h"},
+              {"type": "course", "title": "Django for Everybody - Coursera (UMich)", "url": "https://www.coursera.org/specializations/django", "duration": "3 months"},
+              {"type": "docs", "title": "FastAPI Documentation", "url": "https://fastapi.tiangolo.com/", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "important": [
+          {
+            "name": "Docker",
+            "aliases": ["containerization", "docker compose", "dockerfile", "containers"],
+            "category": "Technical",
+            "description": "Containerize backend services for consistent deployment.",
+            "resources": [
+              {"type": "youtube", "title": "Docker Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=3c-iBn73dDE", "duration": "3h"},
+              {"type": "docs", "title": "Docker Official Documentation", "url": "https://docs.docker.com/get-started/", "duration": "Self-paced"},
+              {"type": "practice", "title": "Docker Labs", "url": "https://github.com/docker/labs", "duration": "5h"}
+            ]
+          },
+          {
+            "name": "Caching",
+            "aliases": ["redis", "memcached", "cdn", "http caching", "cache invalidation"],
+            "category": "Technical",
+            "description": "Implement caching strategies to improve application performance.",
+            "resources": [
+              {"type": "youtube", "title": "Redis Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=jgpVdJB2sKQ", "duration": "4h"},
+              {"type": "docs", "title": "Redis Documentation", "url": "https://redis.io/docs/", "duration": "Self-paced"},
+              {"type": "docs", "title": "Caching Best Practices - AWS", "url": "https://aws.amazon.com/caching/best-practices/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Message Queues",
+            "aliases": ["rabbitmq", "kafka", "sqs", "pub/sub", "event-driven", "async processing", "celery"],
+            "category": "Technical",
+            "description": "Asynchronous communication between services using message brokers.",
+            "resources": [
+              {"type": "youtube", "title": "Message Queues Explained - Hussein Nasser", "url": "https://www.youtube.com/watch?v=oUJbuFMyBDk", "duration": "30m"},
+              {"type": "docs", "title": "RabbitMQ Tutorials", "url": "https://www.rabbitmq.com/tutorials", "duration": "Self-paced"},
+              {"type": "docs", "title": "Apache Kafka Introduction", "url": "https://kafka.apache.org/intro", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Testing",
+            "aliases": ["unit testing", "integration testing", "tdd", "pytest", "mocha", "jest"],
+            "category": "Technical",
+            "description": "Write comprehensive tests for backend services and APIs.",
+            "resources": [
+              {"type": "youtube", "title": "Testing Node.js - Traversy Media", "url": "https://www.youtube.com/watch?v=FKnzS_icp20", "duration": "1h"},
+              {"type": "docs", "title": "Jest Documentation", "url": "https://jestjs.io/docs/getting-started", "duration": "Self-paced"},
+              {"type": "docs", "title": "Pytest Documentation", "url": "https://docs.pytest.org/", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "nice_to_have": [
+          {
+            "name": "Kubernetes",
+            "aliases": ["k8s", "container orchestration", "helm", "pods", "services", "deployments"],
+            "category": "Technical",
+            "description": "Orchestrate containerized applications at scale.",
+            "resources": [
+              {"type": "youtube", "title": "Kubernetes Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=X48VuDVv0do", "duration": "4h"},
+              {"type": "docs", "title": "Kubernetes Documentation", "url": "https://kubernetes.io/docs/home/", "duration": "Self-paced"},
+              {"type": "practice", "title": "Kubernetes by Example", "url": "https://kubernetesbyexample.com/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "GraphQL",
+            "aliases": ["graphql api", "apollo", "apollo server", "graphql schema"],
+            "category": "Technical",
+            "description": "Query language for flexible, efficient API data fetching.",
+            "resources": [
+              {"type": "youtube", "title": "GraphQL Full Course - Net Ninja", "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f", "duration": "4h"},
+              {"type": "docs", "title": "GraphQL Official Tutorial", "url": "https://graphql.org/learn/", "duration": "Self-paced"},
+              {"type": "docs", "title": "Apollo Server Documentation", "url": "https://www.apollographql.com/docs/apollo-server/", "duration": "Self-paced"}
+            ]
+          }
+        ]
+      }
+    },
+    "devops_engineer": {
+      "title": "DevOps Engineer",
+      "description": "Bridge development and operations with automation, CI/CD, and infrastructure management.",
+      "icon": "🔧",
+      "skills": {
+        "critical": [
+          {
+            "name": "Linux",
+            "aliases": ["linux administration", "bash", "shell scripting", "command line", "unix", "terminal", "ssh", "linux commands"],
+            "category": "Technical",
+            "description": "Linux system administration, shell scripting, and command-line proficiency.",
+            "resources": [
+              {"type": "youtube", "title": "Linux Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=sWbUDq4S6Y8", "duration": "5h"},
+              {"type": "course", "title": "Linux Fundamentals - edX (Linux Foundation)", "url": "https://www.edx.org/learn/linux/the-linux-foundation-introduction-to-linux", "duration": "14 weeks"},
+              {"type": "practice", "title": "Linux Survival", "url": "https://linuxsurvival.com/", "duration": "3h"}
+            ]
+          },
+          {
+            "name": "Docker",
+            "aliases": ["containerization", "docker compose", "dockerfile", "containers", "container runtime"],
+            "category": "Technical",
+            "description": "Build, ship, and run applications in containers.",
+            "resources": [
+              {"type": "youtube", "title": "Docker Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=3c-iBn73dDE", "duration": "3h"},
+              {"type": "docs", "title": "Docker Official Documentation", "url": "https://docs.docker.com/get-started/", "duration": "Self-paced"},
+              {"type": "practice", "title": "Play with Docker", "url": "https://labs.play-with-docker.com/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "CI/CD",
+            "aliases": ["continuous integration", "continuous deployment", "github actions", "jenkins", "gitlab ci", "circleci", "travis ci", "argocd"],
+            "category": "Technical",
+            "description": "Design and maintain automated build, test, and deployment pipelines.",
+            "resources": [
+              {"type": "youtube", "title": "CI/CD Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=R8_veQiYBjI", "duration": "2h"},
+              {"type": "docs", "title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions", "duration": "Self-paced"},
+              {"type": "docs", "title": "Jenkins Documentation", "url": "https://www.jenkins.io/doc/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Kubernetes",
+            "aliases": ["k8s", "container orchestration", "helm", "pods", "services", "deployments", "kubectl"],
+            "category": "Technical",
+            "description": "Orchestrate and manage containerized applications at scale.",
+            "resources": [
+              {"type": "youtube", "title": "Kubernetes Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=X48VuDVv0do", "duration": "4h"},
+              {"type": "course", "title": "Kubernetes for Developers - Linux Foundation", "url": "https://training.linuxfoundation.org/training/kubernetes-for-developers/", "duration": "Self-paced"},
+              {"type": "docs", "title": "Kubernetes Documentation", "url": "https://kubernetes.io/docs/home/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Cloud Platforms",
+            "aliases": ["aws", "gcp", "azure", "cloud computing", "ec2", "s3", "iam", "vpc", "cloud infrastructure"],
+            "category": "Technical",
+            "description": "Design and manage cloud infrastructure on major cloud platforms.",
+            "resources": [
+              {"type": "youtube", "title": "AWS Cloud Practitioner - freeCodeCamp", "url": "https://www.youtube.com/watch?v=SOTamWNgDKc", "duration": "14h"},
+              {"type": "course", "title": "GCP Cloud Engineer - Coursera (Google)", "url": "https://www.coursera.org/professional-certificates/cloud-engineering-gcp", "duration": "6 months"},
+              {"type": "docs", "title": "AWS Documentation", "url": "https://docs.aws.amazon.com/", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "important": [
+          {
+            "name": "Infrastructure as Code",
+            "aliases": ["terraform", "ansible", "cloudformation", "pulumi", "iac", "infrastructure automation"],
+            "category": "Technical",
+            "description": "Automate infrastructure provisioning using declarative configuration tools.",
+            "resources": [
+              {"type": "youtube", "title": "Terraform Full Course - freeCodeCamp", "url": "https://www.youtube.com/watch?v=SLB_c_ayRMo", "duration": "2h"},
+              {"type": "course", "title": "Terraform - HashiCorp Learn", "url": "https://developer.hashicorp.com/terraform/tutorials", "duration": "Self-paced"},
+              {"type": "docs", "title": "Ansible Documentation", "url": "https://docs.ansible.com/ansible/latest/index.html", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Monitoring & Logging",
+            "aliases": ["prometheus", "grafana", "elk stack", "datadog", "new relic", "observability", "alerting", "splunk", "cloudwatch"],
+            "category": "Technical",
+            "description": "Implement monitoring, logging, and alerting for production systems.",
+            "resources": [
+              {"type": "youtube", "title": "Prometheus & Grafana Full Course - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=QoDqxm7ybLc", "duration": "3h"},
+              {"type": "docs", "title": "Prometheus Documentation", "url": "https://prometheus.io/docs/introduction/overview/", "duration": "Self-paced"},
+              {"type": "docs", "title": "Grafana Documentation", "url": "https://grafana.com/docs/", "duration": "Self-paced"}
+            ]
+          },
+          {
+            "name": "Networking",
+            "aliases": ["tcp/ip", "dns", "load balancing", "reverse proxy", "nginx", "http/https", "ssl/tls", "vpn", "firewall"],
+            "category": "Technical",
+            "description": "Network fundamentals including DNS, load balancing, and security protocols.",
+            "resources": [
+              {"type": "youtube", "title": "Networking Full Course - NetworkChuck", "url": "https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P", "duration": "10h"},
+              {"type": "docs", "title": "Nginx Documentation", "url": "https://nginx.org/en/docs/", "duration": "Self-paced"},
+              {"type": "course", "title": "Computer Networking - Coursera (Google)", "url": "https://www.coursera.org/learn/computer-networking", "duration": "6 weeks"}
+            ]
+          },
+          {
+            "name": "Git",
+            "aliases": ["version control", "github", "gitlab", "gitops"],
+            "category": "Technical",
+            "description": "Advanced Git workflows and GitOps practices for infrastructure management.",
+            "resources": [
+              {"type": "youtube", "title": "Git & GitHub - freeCodeCamp", "url": "https://www.youtube.com/watch?v=RGOj5yH7evk", "duration": "1h"},
+              {"type": "docs", "title": "GitOps Guide", "url": "https://www.gitops.tech/", "duration": "Self-paced"},
+              {"type": "docs", "title": "Pro Git Book", "url": "https://git-scm.com/book/en/v2", "duration": "Self-paced"}
+            ]
+          }
+        ],
+        "nice_to_have": [
+          {
+            "name": "Security",
+            "aliases": ["devsecops", "security scanning", "vulnerability assessment", "penetration testing", "sast", "dast"],
+            "category": "Technical",
+            "description": "Security practices integrated into the DevOps pipeline (DevSecOps).",
+            "resources": [
+              {"type": "youtube", "title": "DevSecOps Full Course - Simplilearn", "url": "https://www.youtube.com/watch?v=J73MELGF6u0", "duration": "4h"},
+              {"type": "docs", "title": "OWASP DevSecOps Guideline", "url": "https://owasp.org/www-project-devsecops-guideline/", "duration": "Self-paced"},
+              {"type": "practice", "title": "TryHackMe", "url": "https://tryhackme.com/", "duration": "Ongoing"}
+            ]
+          },
+          {
+            "name": "Python",
+            "aliases": ["python scripting", "automation scripts", "python3"],
+            "category": "Technical",
+            "description": "Scripting and automation for DevOps workflows and tooling.",
+            "resources": [
+              {"type": "youtube", "title": "Python for DevOps - TechWorld with Nana", "url": "https://www.youtube.com/watch?v=t8pPdKYpowI", "duration": "5h"},
+              {"type": "course", "title": "Google IT Automation with Python - Coursera", "url": "https://www.coursera.org/professional-certificates/google-it-automation", "duration": "6 months"},
+              {"type": "docs", "title": "Automate the Boring Stuff with Python", "url": "https://automatetheboringstuff.com/", "duration": "Self-paced"}
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
